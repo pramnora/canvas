@@ -16,12 +16,12 @@ You can either choose to create 2/or, 3 seperate files:
 
 ### NOTE(2):
 
-First, you write the HTML Canvas code...; by declaring the 2 open/close 'canvas' tags
-Next, you write the Javascript below the pair of HTML 'canvas tags'...otherwise, your script might encounter errors such as: object not found/can't initialize variables...?!
+Remember that order is important... First, you write the HTML Canvas code...; by declaring the 2 open/close 'canvas tags'.
+Next, you write the Javascript below the pair of HTML 'canvas tags'...; otherwise, your script might encounter errors such as: object not found/can't initialize variables...?!
 
 ### NOTE(3):
 
-It's a good idea to include a message saying: 'Your browser does not understand the HTML 5 canvass tag.' which is written in between the pair of open/close 'canvas tags'; as not all browsers will understand it, especially, if older.
+It's a good idea to include a message saying: 'Your browser does not understand the HTML 5 canvas tag.' which is written in between the pair of open/close 'canvas tags'; as not all browsers will understand it, especially, if older.
 
 ## Links
 
