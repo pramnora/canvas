@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <!--created: 21:35 17/03/2017
+     updated: 21:35 17/03/2017-->
+
+ <head> 
+
+  <meta charset="utf-8" />
+
+  <title>HTML 5 Canvas/Draw A Line</title>
+
+  <style>
+
+   /* In order to see what would otherside be an invisible canvas (with no border); 
+      we may use CSS style sheet code to draw a thin border outline going all around the canvas... */
+
+   canvas{
+    border:red 1px solid;
+   }
+
+  </style>
+ 
+ </head>
+
+ <body>
+
+  <canvas id="myCanvas" width="400" height="400">
+  </canvas>
+
+  <script>
+
+   //*** Create 2 variables allowing us to access the HTML canvas object... 
+
+   var c = document.getElementById("myCanvas");
+   var ctx = c.getContext("2d");
+
+   //-----------------------------------------------------------------------------------------------------------------
+
+   //*** Create 4 variables used to control positions: x1,y1,x2,y2...
+
+   var xHoriPos1=0,   yVertPos1=0;
+   var xHoriPos2=400, yVertPos2=400;
+
+   //*** Draw a diagonal line: top left(xHoriPos1,yVertPos1/0,0) down to bottom right(xHoriPos2,yVertPos2/400,400)...
+
+   ctx.moveTo(xHoriPos1,yVertPos1);
+   ctx.lineTo(xHoriPos2,yVertPos2);
+   ctx.stroke();
+
+   //-----------------------------------------------------------------------------------------------------------------
+
+   //*** Alternatively, we could have written the same above code...
+   //    without needing to declare any variables for: x1,y1,x2,y2...
+   //    by using numeric literals, instead...
+
+   //ctx.moveTo(0,0);
+   //ctx.lineTo(400,400);
+   //ctx.stroke();
+
+   //...However, using named variables makes things read a lot more clear.
+    
+  </script>
+
+ </body>
+
+</html>
