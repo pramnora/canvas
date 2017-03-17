@@ -9,6 +9,7 @@ You can either choose to create 2/or, 3 seperate files:
 - fileName.html
 - fileName.js
 - fileName.css  
+
 ...or else, you could choose to including all HTML/Javascript/CSS code inside of one single [.html] document file instead.  
 
 ## Links
