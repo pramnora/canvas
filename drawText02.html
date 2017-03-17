@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--created: 22:55 17/03/2017
+     updated: 22:55 17/03/2017-->
+ <head> 
+  <meta charset="utf-8" />
+  <title>HTML 5 Canvas/Draw A Line</title>
+  <style>
+   canvas{border:red 1px solid;}
+  </style>
+ </head>
+ <body>
+  <canvas id="myCanvas" width="400" height="400">
+   Your browser does not support the HTML 5 Canvas tag.
+  </canvas>
+  <script>
+   var c = document.getElementById("myCanvas");
+   var ctx = c.getContext("2d");
+   ctx.font = "30px Arial";
+   ctx.strokeText("Some text",130,200); //...draws the outline going around the text/with the inside text being left as empty space  
+  </script>
+ </body>
+</html>
