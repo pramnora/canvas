@@ -21,7 +21,9 @@ Next, you write the Javascript below the pair of HTML 'canvas tags'...; otherwis
 
 ### NOTE(3):
 
-It's a good idea to include a message saying: 'Your browser does not understand the HTML 5 canvas tag.' which is written in between the pair of open/close 'canvas tags'; as not all browsers will understand it, especially, if older.
+Web browsers such as IE 8.1, and, older...may not be able to understand how to read HTML 5 canvas tag code; therefore, it's necessary to include in between the pair of open/close canvas tags a message stating... 
+'Your browser does not understand the HTML 5 canvas tag.'
+...browsers that do understand will NOT display the message; only browsers that don't understand.
 
 ## Links
 
