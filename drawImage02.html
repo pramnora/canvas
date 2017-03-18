@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--created: 01:35 18/03/2017
+     updated: 01:35 18/03/2017-->
+ <!--NOTE: The idea for this script originally came from...
+     https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_img
+     ...only there they are using a 'button click' to load the image/
+     and, I changed it to becoming a 'thumbnail image click', instead;
+     also, over there they only address loading just 'one' single image, alone;
+     but, my script is set up to load in 'multiple' images;
+     finally, I changed the user instructions to better suit my own version .
+  -->
+ <head> 
+  <meta charset="utf-8" />
+  <title>HTML 5 Canvas/Draw A Line</title>
+  <style>
+   canvas{border:red 1px solid;}
+  </style>
+ </head>
+ <body>
+  <h1>Show Image inside of HTML Canvas element</h1>
+  <hr />
+  <p>USER INSTRUCTIONS: Click on each small thumbnail sized image in order to see it enlarged:</p>
+  <!--NOTE: Each image represents a different type of graphic file: [.jpg]/[.bmp]/[.png]-->
+  <p>
+   <img id="pic01" src="pic01.jpg" alt="pic01.jpg" width="50" height="50" onclick="showLargerImage('pic01')"/>
+   <img id="pic02" src="pic02.bmp" alt="pic02.bmp" width="50" height="50" onclick="showLargerImage('pic02')"/>
+   <img id="pic03" src="pic03.png" alt="pic03.png" width="50" height="50" onclick="showLargerImage('pic03')"/>
+  </p>
+  <hr />
+  <canvas id="myCanvas" width="400" height="400">
+   Your browser does not support the HTML 5 Canvas tag.
+  </canvas>
+  <script>
+   /* NOTE: This script is still a little bit buggy...
+            in that each image will get drawn on top of the other;
+            so as to create the effect of producing a series of over-lapping images! 
+            I still need to figure out how to clear the canvas
+            to start again afresh with a 'new' blank screen...?
+   */ 
+   function showLargerImage(imgName){
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById(imgName);
+    ctx.drawImage(img,0,0);    
+   }
+  </script>
+ </body>
+</html>
