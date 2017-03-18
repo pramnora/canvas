@@ -28,4 +28,10 @@ It's a good idea to include a message saying: 'Your browser does not understand 
 W3Schools...  
 https://www.w3schools.com/html/html5_canvas.asp  
 
+HTML 5 Canvas Cheat Sheet  
+http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/  
+
+W3C: Context 2d - latest  
+https://www.w3.org/TR/2dcontext/  
+
 
