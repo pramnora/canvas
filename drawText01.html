@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
- <!--created: 22:44 17/03/2017
-     updated: 22:44 17/03/2017-->
+ <!--created: 01:15 18/03/2017
+     updated: 01:15 18/03/2017-->
  <head> 
   <meta charset="utf-8" />
   <title>HTML 5 Canvas/Draw A Line</title>
@@ -16,8 +16,12 @@
   <script>
    var c = document.getElementById("myCanvas");
    var ctx = c.getContext("2d");
+    
    ctx.font = "30px Arial";
-   ctx.fillText("Some text",130,200);   
+   ctx.strokeText("Some text",120,190); //...draws the outline going around the text/with the inside text being left as empty space  
+
+   ctx.font = "30px Arial";
+   ctx.fillText("Some text",130,200);   //...draws the text being filled in on top of the previous text
   </script>
  </body>
 </html>
