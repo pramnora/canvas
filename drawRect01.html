@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <!--created: 09:28 18/03/2017
+     updated: 09:28 18/03/2017-->
+
+ <head> 
+
+  <meta charset="utf-8" />
+
+  <title>HTML 5 Canvas/</title>
+
+  <style>
+   canvas{border:red 1px solid;}
+  </style>
+ 
+ </head>
+
+ <body>
+
+  <!--Create the HTML Canvas object element--> 
+
+  <canvas id="myCanvas" width="400" height="400">
+   Your browser does not support the HTML 5 Canvas tag.
+  </canvas>
+
+  <script>
+
+   //*** PROGRAM: Draws 4 separate rectangles...
+
+   //*** Create 2 variables allowing us to access the HTML canvas object... 
+
+   var c = document.getElementById("myCanvas");
+   var ctx = c.getContext("2d");
+   
+   //*** draw a black rectangle...
+   //    NOTE: Black, is the default fill colour;
+   //          so, there was no need to specify any colour. 
+
+   ctx.fillRect(0,0,200,200);
+    
+   //*** draw a red rectangle... 
+
+   ctx.fillStyle="red";
+   ctx.fillRect(200,0,400,200);
+
+   //*** draw a green rectangle... 
+
+   ctx.fillStyle="green";
+   ctx.fillRect(0,200,200,400);
+
+   //*** draw a yellow rectangle... 
+
+   ctx.fillStyle="yellow";
+   ctx.fillRect(200,200,400,400);
+
+  </script>
+
+ </body>
+
+</html>
