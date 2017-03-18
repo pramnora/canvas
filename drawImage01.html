@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<!--NOTE: This script taken from...
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_img
+...and, only slightly adapted by me:(changed image name/id name/alt name/border: red).
+-->
+
+<body>
+
+<p>Small thumbnail image:</p>
+<img id="pic01" src="pic01.jpg" alt="pic01" width="20" height="20">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="250" height="300" style="border:1px solid red;">
+ Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<p><button onclick="myCanvas()">Show large image</button></p>
+
+<script>
+function myCanvas() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("pic01");
+    ctx.drawImage(img,10,10);
+}
+</script>
+
+</body>
+</html>
