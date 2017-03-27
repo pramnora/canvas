@@ -25,7 +25,7 @@ Web browsers such as IE 8.1, and, older...may not be able to understand how to r
 'Your browser does not understand the HTML 5 canvas tag.'
 ...browsers that do understand will NOT display the message; only browsers that don't understand.
 
-### Example code
+## Example code
 
 http://codepen.io/GhostRider/pen/azaJgW  (canvas heart)  
 
